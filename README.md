@@ -44,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To run it via docker container without docker file
+### `docker run -it --rm -d -p 3000:80/tcp --name taskify  -v /home/sabya/MyProjects/taskify/build:/usr/share/nginx/html nginx`
+
+To build and run it via docker container with docker file
+### `docker build . -t taskify-image:latest`
+### `docker run -it --rm -d -p 3000:80/tcp --name taskify taskify-image`
+
